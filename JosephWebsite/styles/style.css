@@ -1,6 +1,66 @@
 
 .navbar{
-
 	background-color: #fff;
+	z-index: 1000;
 }
 
+
+.beginContent{
+	z-index:100;
+
+}
+.topper{
+		background-color: #f5b335;
+		height: auto;
+		width: 100%;
+		position: fixed;
+		top: 80;
+		z-index:-10;
+}
+
+body{
+	width: 100%;
+	background-color: transparent;
+	background: transparent;
+}
+
+
+.parallax-window {
+	min-height: 700px;
+	background: transparent;
+}
+
+.top-par{
+	margin-top:-175px;
+}
+
+.bottom-par{
+	margin-bottom: 0px;
+}
+
+*{
+font-family: 'Open Sans';
+}
+
+.navbar{
+	background-color:#C81010;
+	border-bottom: .5px solid white;
+	opacity:.95;
+}
+
+.top-quote{
+	margin-top:0px;
+}
+
+.tab a{
+	color: white;
+	text-decoration: none;
+}
+
+navbar{
+	text-decoration: none;
+}
+
+.tab a:hover{
+	color:black;
+}

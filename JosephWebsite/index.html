@@ -13,7 +13,6 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/style.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -21,7 +20,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </head>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.3.2/parallax.min.js'></script>
+  <link rel="stylesheet" href="styles/style.css"/>
+  
+</head>
   
   
     <nav class="navbar navbar-fixed-top">
@@ -36,21 +39,40 @@
             <p class="navbar-brand">Excellence in Special Education - Since 1983</p>
             </div>
         <ul class="nav nav-tabs nav-justified" id="myNavbar">
-            <li role="presentation" class="active"><a href="#">Home Page</a></li>
-            <li role="presentation"><a href="#">Our Mission</a></li>
-            <li role="presentation"><a href="#">Our Program</a></li>           
-            <li role="presentation"><a href="#">Our Schools</a></li>
-            <li role="presentation"><a href="#">JA Fundraiser</a></li>
-            <li role="presentation"><a href="#">For Parents</a></li>
-            <li role="presentation"><a href="#">For Districts</a></li>
-            <li role="presentation"><a href="#">Contact Us</a></li>
+            <li class="tab" role="presentation" class="active"><a href="#">Home Page</a></li>
+            <li class="tab" role="presentation"><a href="#">Our Mission</a></li>
+            <li class="tab" role="presentation"><a href="#">Our Program</a></li>           
+            <li class="tab" role="presentation"><a href="#">Our Schools</a></li>
+            <li class="tab" role="presentation"><a href="#">JA Fundraiser</a></li>
+            <li class="tab" role="presentation"><a href="#">For Parents</a></li>
+            <li class="tab" role="presentation"><a href="#">For Districts</a></li>
+            <li class="tab" role="presentation"><a href="#">Contact Us</a></li>
         </ul>
         </div>
     </nav>
-    <p><br><br><br></p>
-    
+
+  
+</div>
+
+      
+
     <body>
-        <div class="container">
+        <div class="parallax-window top-par" data-parallax="scroll" data-image-src="images/stock.jpg"></div>
+            <div class="parallax-window" data-parallax="scroll" data-image-src="images/Eagle.jpg">
+                <div class="container top-quote">
+               <div class="jumbotron ">
+                    <blockquote class="blockquote ">
+                        <p>"We are regarded as the 'go-to' school by Lake, Cook and DuPage Counties.  We are the specialist.”</p>
+                        <footer class="blockquote-footer ">Michael Schack, Executive Director</footer>
+                      </blockquote>
+                </div>
+              </div>
+            </div>
+            <!--<div class="parallax-window" data-parallax="scroll" data-image-src="images/classroom_01.jpg"></div>-->
+           
+            
+
+        <div class="container beginContent">
         <div class="jumbotron">
             <h1>About Us</h1>
             <p>Joseph Academy is a school serving the needs of young people with severe behavioral, emotional, and learning disabilities. Our program strives to give hope to our students to become successful in their learning environment.
@@ -61,6 +83,8 @@
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XB3dm5_eGQo"></iframe>
             </div>       
          </div>
+
+         <!--
 
     <div class="jumbotron">
          
@@ -76,6 +100,8 @@
                 </div>
           </div>
       </div>
+    -->
+      
 
             <div class="jumbotron">
                 <h2>Full Calendar</h2>
@@ -106,7 +132,7 @@
                         <iframe class="embed-responsive-item" src="https://josephacademy.org/JA%20Newsletter%2009-16.pdf"></iframe>
                     </div>   
             </div>
-
+        
 
 
     </div>
