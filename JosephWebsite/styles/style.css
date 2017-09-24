@@ -21,12 +21,38 @@
 		z-index:-10;
 }
 
+ul li{
+	font-weight: bold;
+	text-decoration: none;
+}
+
 body{
 	width: 100%;
 	background-color: transparent;
 	background: transparent;
 }
 
+.nav-title{
+	color: white;
+}
+
+.logo{
+	height: 150px;
+}
+
+.gal{
+	width: 165px;
+	height: 165px;
+}
+
+.gallery_product{
+    margin-bottom: 30px;
+}
+
+.bord-right-left {
+	border-right: 1px solid #333;
+	border-left: 1px solid #333;
+}
 
 .parallax-window {
 	min-height: 700px;
@@ -43,21 +69,51 @@ body{
 
 *{
 font-family: 'Open Sans';
+color: #002050;
+}
+
+.title{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.sub-title > i{
+	color: grey;
 }
 
 .navbar{
-	background-color:#C81010;
+	background-color:#002050;
 	border-bottom: .5px solid white;
 	opacity:.95;
 }
 
+
+
 .top-quote{
-	margin-top:0px;
+	margin-top:-300px;
+	margin-bottom: 100px;
 }
 
 .tab a{
 	color: white;
 	text-decoration: none;
+	border-bottom: 0px solid #001F50;
+}
+
+.tab{
+	border-bottom: 0px;	
+	border-bottom: #002050;
+}
+
+.nav-tabs, .nav, .nav-justified, .tab{
+	border-bottom: 0px solid #002050;	
+}
+
+.nav-tabs.nav-justified>li>a {
+    border-bottom: 0px solid #ddd;
+	border-radius: 4px 4px 4px 4px;
+	height: 60px;
+	font-size: 17px;
 }
 
 navbar{
@@ -67,3 +123,24 @@ navbar{
 .tab a:hover{
 	color:black;
 }
+
+.my_panel{
+	height: 1250px;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+	background-color:#002050;
+	color: white;
+	text-align: center;
+}
+
+.panel > .panel-heading > b {
+	color: white;
+}
+	
+
+.foot > li{
+	background-color: #002050;
+}
+
