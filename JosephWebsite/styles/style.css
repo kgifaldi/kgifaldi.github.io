@@ -26,6 +26,10 @@ ul li{
 	text-decoration: none;
 }
 
+.excellence{
+	font-size: 15px;
+}
+
 body{
 	width: 100%;
 	background-color: transparent;
@@ -63,12 +67,31 @@ body{
 	margin-top:-175px;
 }
 
+.container{
+	width: 95%;
+}
+
 .bottom-par{
 	margin-bottom: 0px;
 }
 
+.center{
+	text-align: center;
+}
+
+.closer{
+	line-height: 1px;
+	height:25px;
+}
+
+.bigger{
+	font-size: 20px;
+}
+
 *{
-font-family: 'Open Sans';
+font-family: 'Consolas, monaco, monospace';
+font-size: 24px;
+font-style: normal;
 color: #002050;
 }
 
@@ -112,7 +135,7 @@ color: #002050;
 .nav-tabs.nav-justified>li>a {
     border-bottom: 0px solid #ddd;
 	border-radius: 4px 4px 4px 4px;
-	height: 60px;
+	height: 75px;
 	font-size: 17px;
 }
 
@@ -144,3 +167,6 @@ navbar{
 	background-color: #002050;
 }
 
+.lm{
+	margin-left: 50px;
+}
