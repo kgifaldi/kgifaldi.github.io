@@ -1,0 +1,242 @@
+.header-up,
+.header-down{
+  height: 150px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  z-index: 300;
+  position: fixed;
+  text-align: center;
+  background-color: #242628;
+  opacity: .9;
+}
+.header-down{
+  top:0px;
+  transition: top 0.2s ease-in-out;
+}
+.header-up{top:-150px;}
+
+body{
+  width: 100%;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  clear: both;
+}
+
+.quoteContainer{
+  height: 700px;
+  width: 100%;
+  background-image: url("quoteImage.jpg");
+  position: fixed;
+  z-index -10;
+  padding-top: 100px;
+}
+.About{
+  height: 2500px;
+  background-image: url("aboutImage.jpg");
+  border-radius: 3px;
+  top: 800px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 500px;
+}
+
+.aboutText{
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-size: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 50px;
+}
+
+.title{
+  font-family: Consolas, monaco, monospace;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 50px;
+}
+.title span{
+  display: inline-block;
+  position:relative;
+}
+.title span:before,
+.title span:after{
+  content: "";
+  position: absolute;
+  height: 55px;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  top: 0px;
+  width: 500px;
+}
+.title span:after{ 
+  right: 90%;
+  margin-right: -100px;
+}
+.title span:before{
+  left: 90%;
+  margin-left: -100px;
+}
+.quoteFooter,
+.quote{
+  margin-top: -100px;
+  font-family: Consolas, monaco, monospace;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  text-shadow: #fff 2px 2px 5px;  
+}
+
+.quote{ 
+  font-size: 80px; 
+  line-height: 250px;
+  padding-top: 200px;
+}
+.quoteFooter{font-size: 50px; line-height: 100px; padding-top: 100px;}
+
+ul{
+  padding-top:55px;
+  line-height: 40px;
+  list-style:  none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 55px;
+}
+
+li{
+  color: #fff;
+  font-family: Consolas, monaco, monospace;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size:  30px;
+  display: inline;
+}
+
+li:hover{
+  background-color: #55799b;
+}
+
+.Projects{
+    height: auto;
+    background-image: url("gallery.jpg");
+    border-radius: 10px;
+    z-index: 5;
+    position: relative;
+}
+
+.video{
+  margin-top: -135px;
+  height: 387px;
+  width: auto;
+}
+
+.project{
+  width: 600px;
+  height: 387px;
+  background-color: #F0F8FF;
+  margin: 30px 30px 30px 30px;
+  display: inline-block;
+  z-index: 200;
+  box-shadow: 5px 5px 20px #333;
+  overflow: hidden;
+}
+
+.project:hover{
+  box-shadow: 10px 10px 40px #000000;
+}
+
+.aboutProject{
+  font-family: Consolas, monaco, monospace;
+  font-size: 25px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+.projectDescription{
+  line-height: 75px;
+  font-size: 30px;
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  text-align: center;
+  color: #DAA520;
+  position: relative;
+  z-index: 101;
+}
+
+
+
+.Contact{
+  margin-top: 600px;
+  margin-bottom: 0;
+  height: auto;
+  border-radius: 10px;
+  background-image: url("contact.jpg");
+  background-size: cover;
+  z-index: 5;
+  position: relative;
+  bottom: 600px;
+}
+
+.contactCard{
+  width:  300px;
+  height:  300px;
+  background-color: #FF7F1F;
+  margin:  200px 200px 200px 200px;
+  display: inline-block;
+  box-shadow: 5px 5px 5px #000000;
+  border-radius: 100px;
+}
+
+.contactDescription{
+  line-height:  50px;
+  font-size: 50px;
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  text-align: center;
+  color: #F5F5DC;
+  position:  relative;
+  padding-bottom: 50px;
+}
+
+.icon{
+  width: 200px;
+  height: 180px;
+  margin-top: -100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon.Gmail{
+  background-image: url("gmail.png");
+  background-size: cover;
+}
+
+.icon.LinkedIn{
+  background-image: url("linkedIn.png");
+  background-size: cover;
+}
+
+
+.icon.Resume{
+  background-image: url("resume.png");
+  background-size: cover;
+}
+
+.icon.Github{
+  background-image: url("github.png");
+  background-size: cover;
+}
+
+footer{
+  height: 600px;
+  width: 100%;
+  background-image: url("quoteImage.jpg");
+  position: fixed;
+  bottom: 0;
+  z-index -20;
+}

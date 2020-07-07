@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lan="en">
+
+  <head>
+  <title>Kyle Gifaldi</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  </head>
+  
+  
+  <body>
+    <header class="header-down">
+      <ul>
+          <li class="aboutTopper">About</li>
+          <li class="projectsTopper">Projects</li>
+          <li class="contactTopper">Contact</li>
+      </ul>
+    </header>
+    
+    <div class="quoteContainer">
+      <p class="quote">
+        "Have no fear of perfection, you'll never reach it"
+      </p>
+    </div>
+    
+    <div class="About"> 
+ 
+        <p class="title"><span>About</span></p>
+
+        <p class="aboutText">
+        
+            Hello. My name is Kyle Gifaldi. I am currently a Junior attending the University of Notre Dame, currently pursuing a bachelor's degree?? in computer science. I enjoy computer science for several reasons. 1) computers are used to solve challenging problems that humans can't do efficiently or effectively. In this sense, I look at computers as a tool to further the capabilities of humans. 2) A lot of the work done with computers is inately creative. Someone might have a vision of something that
+            they want to create, and computers give that person a way to make their vision a reality. Things like game development, web develeopment, and 3-d modeling are enjoying for this reason. In this sense, I look at computers as a creative medium. 3) There is enough knowlege and skills relevant to the field of computers to last many lifetimes of learning. And since computers are an expanding field, these skills and knowledge are expanding at a crazy rate. In this sense, I look at
+            computers as an infinite opportunity to improve and learn. These reasons and others fuel my passion of computers and make me excited everyday to expand my 
+
+        </p>
+      
+    </div>
+    
+    <div class="Projects">
+      
+        <p class="title"><span>Projects</span></p>
+      
+
+      <a class="projectLink"><div class="project"><p class="projectDescription">Some Other Project</p></div></a>      
+      <a class="projectLink"><div class="project"><p class="projectDescription">Arrow app</p></div></a>  
+      <a class="projectLink"><div class="project"><p class="projectDescription">Maze Generator</p><video loop muted autoplay class="video"><source src="maze.mp4" type="video/mp4"></video><p class="aboutProject">This is a maze genroator that I wrote in c and displayed using the gfx graphics libraries. The generator creates a random walk which ends once it connects to the already-made path. Once a new random walk is generated and connected to the maze, a new random walk is created from
+              the branching position. The end product consists of one single path from the start to the end with several branching paths which terminate before the end. Click here to view the source code.</p></div></a>  
+      <a class="projectLink"><div class="project"><p class="projectDescription">Personal Website</p><video loop muted autoplay class="video"><source src="website.mp4" type="video/mp4"></video><p class="aboutProject">This is my personal website used to showcase some of my projects. I used html to format the content, CSS to style all of the content, and jquery to animate some actions. I enjoy web development because of its creative nature. I particularly enjoy the
+              vast number of ways to display your content. Click here to view this website's source code.</p>
+              </div></a>  
+      <a class="projectLink"><div class="project"><p class="projectDescription">Image Compression</p></div></a>  
+      <a class="projectLink"><div class="project"><p class="projectDescription">Second App</p></div></a>  
+      <a class="projectLink"><div class="project"><p class="projectDescription">Maya Scene</p><video loop muted autoplay class="video"><source src="maya.mp4" type="video/mp4"></video><p class="aboutProject">This is a scene that I modeled and animated using the autodesk Maya program. This scene consists of four separate scenes combined through the magic of video editing. The first scene consists of a galaxy created with the software's particles
+              feature. The second scene shows the sun and the earth. The third scene shows an astroid hurtling towards our doomed planet. The asteroids tail was created with the fluids feature of autodesk Maya. The final scene shows the climactic destruction of a lone volcano whose final action was the destruction of its surroundings just as a star dies; destroying any surrounding life. As if screaming at the heavens "Experience my full mite and rue this day as I will
+              never return!" Click here to view the source code.</p></div></a>  
+      <a class="projectLink"><div class="project"><p class="projectDescription">Super Mario Bros.</p><video loop muted autoplay class="video"><source src="marioGame.mp4" type="video/mp4"></video><p class="aboutProject">This is my version of super mario bros. I created one level in c utilizing the gfx graphics libraries. Within the level, the user playing as mario can move, jump, and throw fire balls. The objective is the reach the castle at the end of the
+              level. If the player jumps up into a brown brick, the brick breaks. If the player jumps up into a yellow brick with a question mark, it turns into a brown brick and the player gets points. If the player runs into a goompa???, he loses points. If the player runs into a goompa with 0 points, he loses. Finally, the player can jump on a goompa or hit it with a fire ball which will kill it. Click here to view the source code.</p></div></a>
+      
+    </div>
+
+    <div class="Contact">
+
+        <p class="title"><span>Contact</span></p>
+      
+        <a class="contactLink"><div class="contactCard"><p class="contactDescription">Github</p><div class="icon Github"></div></div></a>
+      <a class="contactLink"><div class="contactCard"><p class="contactDescription">Resume</p><div class="icon Resume"></div></div></a>
+      <a class="contactLink"><div class="contactCard"><p class="contactDescription">Gmail</p><div class="icon Gmail"></div></div></a>
+      <a class="contactLink"><div class="contactCard"><p class="contactDescription">LinkedIn</p><div class="icon LinkedIn"></div></div></a>
+      
+    </div>
+    
+
+    <script type="text/javascript">
+
+$("document").ready(function(){
+
+    $(".project").click(function(){
+    var width = $(this).css("width");
+    if(width == "600px"){
+        $(this).animate({
+            "height":"1500px",
+            "width":"1500px"
+        }, 450);
+        $(this).children("video").animate({
+            "height":"968px"
+        }, 450);
+    }
+    else{
+        $(this).animate({
+            "height":"387px",
+            "width":"600px"
+        }, 450);
+        $(this).children("video").animate({
+            "height":"387px"
+        }, 450);
+    }
+
+    });
+
+    $(".aboutTopper").click(function(){
+        $("html, body").animate({scrollTop:650}, "slow");
+        return false;
+    });
+
+    $(".projectsTopper").click(function(){
+        $("html, body").animate({scrollTop:1550}, "slow");
+        return false;
+    });
+
+    $(".contactTopper").click(function(){
+        $("html, body").animate({scrollTop:10000}, "slow");
+        return false;
+    });
+
+
+});
+    </script>
+
+
+
+
+  </body>
+  
+  
+  
+  <footer>
+
+      <p class="quoteFooter">
+
+            "Shoot for the moon. Even if you miss, you'll land among the stars where you will be forced to drift aimlessly farther into the vast, empty abyss of space until a lack of food, water, and oxygen causes you to succumb to death's cold embrace."
+
+      </p>
+
+    
+  </footer>
+  
+  
+</html>
+
+
